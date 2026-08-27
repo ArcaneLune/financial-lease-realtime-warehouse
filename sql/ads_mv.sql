@@ -1,6 +1,6 @@
 -- =====================================================
 -- ADS 层异步物化视图（Doris 2.1）
--- 效果：从 DWD+DIM 聚合，Doris 每天自动刷新，FineBI 可直接查
+-- 效果：从 DWD+DIM 聚合，Doris 每 5 分钟自动刷新，FineBI 可直接查
 -- 执行：mysql -h hadoop100 -P 9030 -uroot -proot < sql/ads_mv.sql
 -- 说明：若某物化视图创建失败（Doris 版本对 UNION/JOIN 支持有限），退回 sql/ads_etl.sql（INSERT OVERWRITE）
 -- =====================================================
