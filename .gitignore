@@ -1,0 +1,37 @@
+# ===== Java / Maven =====
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+mvnw
+.mvn/
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+*.local.properties
+
+# ===== 日志 / 临时 =====
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*~
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 本地配置 / 敏感信息 =====
+*.properties.local
+*.yml.local
+config/application-local.*

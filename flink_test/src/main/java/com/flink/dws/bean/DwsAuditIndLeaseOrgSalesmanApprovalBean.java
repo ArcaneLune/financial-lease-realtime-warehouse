@@ -1,0 +1,36 @@
+package com.flink.dws.bean;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+/** 审批域-行业业务方向经办人粒度-审批通过窗口汇总 */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class DwsAuditIndLeaseOrgSalesmanApprovalBean implements Serializable {
+    @JsonProperty("stt") public String stt;
+    @JsonProperty("edt") public String edt;
+    @JsonProperty("cur_date") public String curDate;
+    @JsonProperty("industry1_id") public Long industry1Id;
+    @JsonProperty("industry1_name") public String industry1Name;
+    @JsonProperty("industry2_id") public Long industry2Id;
+    @JsonProperty("industry2_name") public String industry2Name;
+    @JsonProperty("industry3_id") public Long industry3Id;
+    @JsonProperty("industry3_name") public String industry3Name;
+    @JsonProperty("lease_organization") public String leaseOrganization;
+    @JsonProperty("salesman_id") public Long salesmanId;
+    @JsonProperty("salesman_name") public String salesmanName;
+    @JsonProperty("department1_id") public Long department1Id;
+    @JsonProperty("department1_name") public String department1Name;
+    @JsonProperty("department2_id") public Long department2Id;
+    @JsonProperty("department2_name") public String department2Name;
+    @JsonProperty("department3_id") public Long department3Id;
+    @JsonProperty("department3_name") public String department3Name;
+    @JsonProperty("apply_count") public Long applyCount;
+    @JsonProperty("apply_amount") public BigDecimal applyAmount;
+    @JsonProperty("reply_amount") public BigDecimal replyAmount;
+    @JsonProperty(value = "approve_time", access = JsonProperty.Access.WRITE_ONLY)
+    public String approveTime;
+    public DwsAuditIndLeaseOrgSalesmanApprovalBean() {}
+}

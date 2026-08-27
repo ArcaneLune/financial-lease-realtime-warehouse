@@ -1,0 +1,23 @@
+# 注意修改数据地址、用户名、密码
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://hadoop100:3306/finance_result?useSSL=false
+    username: root
+    password: root
+  jpa:
+    show-sql: false
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+logging:
+  level:
+    root: fatal
+mock:
+  # 模拟数据生成的时间起始日期
+  date: 2026-08-19
+  # 取值范围0-1，数值越大，数据时间越紧凑
+  enthusiasm: 0.1
