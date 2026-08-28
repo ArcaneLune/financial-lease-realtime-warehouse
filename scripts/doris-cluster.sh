@@ -11,7 +11,7 @@
 # =====================================================
 
 # ===== 可修改配置 =====
-DORIS_HOME=/opt/module/doris          # Doris 安装目录（按实际改）
+DORIS_HOME=/opt/module/doris2.1          # Doris 安装目录（按实际改）
 FE_HOST=hadoop100                     # FE 节点
 BE_HOSTS="hadoop101 hadoop102"        # BE 节点（空格分隔）
 # =====================
